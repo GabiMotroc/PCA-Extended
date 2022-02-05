@@ -11,4 +11,10 @@ public class Test : ControllerBase
     {
         return new JsonResult("OK");
     }
+
+    [HttpPost]
+    public IActionResult Post()
+    {
+        return new JsonResult("OK but post");
+    }
 }
